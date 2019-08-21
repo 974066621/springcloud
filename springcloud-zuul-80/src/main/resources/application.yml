@@ -1,0 +1,30 @@
+server: 
+  port: 80
+ 
+spring: 
+  application:
+    name: springcloud-zuul-80
+ 
+eureka: 
+  client: 
+    service-url:
+       defaultZone: http://localhost:8001/eureka
+      # 集群的时候需要向多个注册中心进行注册 defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka  
+  instance:
+    instance-id: localhost #访问的ip地址
+    prefer-ip-address: true 
+ 
+ 
+#zuul: 
+  #ignored-services: microservicecloud-dept
+ # prefix: /atguigu
+ # ignored-services: "*"
+ # routes: 
+ #   mydept.serviceId: microservicecloud-dept
+ #   mydept.path: /mydept/**
+ 
+info:
+  app.name: springcloud
+  company.name: liuyunzhe
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
