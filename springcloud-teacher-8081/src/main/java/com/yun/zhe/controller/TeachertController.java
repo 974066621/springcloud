@@ -10,11 +10,9 @@ import com.yun.zhe.service.StudentService;
 @RestController
 public class TeachertController {
   @Autowired
-  StudentService studentService;
+     StudentService studentService;
 	  @GetMapping("/teacher/get")
 	  public Student get() {
-		
-		
       return studentService.test();
 	}
 	
