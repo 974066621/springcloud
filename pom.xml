@@ -155,5 +155,6 @@
 		<module>springcloud-student-8080</module>
 		<module>springcloud-teacher-8081</module>
 		<module>springcloud-configServer-8090</module>
+		<module>springcloud-config-client</module>
 	</modules>
 </project>
