@@ -13,4 +13,6 @@ public class StudentController {
 	public Student test() {
 		return new Student().setName("student:yunzhe");
 	}
+	
+	
 }

@@ -7,8 +7,6 @@ import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfigurat
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication(exclude={DataSourceAutoConfiguration.class,HibernateJpaAutoConfiguration.class})
-@EnableEurekaClient
-
 public class StudentApplication_8080 {
 
 	public static void main(String[] args) {
