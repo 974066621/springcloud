@@ -7,9 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.yun.zhe.entity.Student;
 import com.yun.zhe.service.StudentService;
 
+
 @RestController
 public class TeachertController {
-  @Autowired
+     @Autowired
      StudentService studentService;
 	  @GetMapping("/teacher/get")
 	  public Student get() {
