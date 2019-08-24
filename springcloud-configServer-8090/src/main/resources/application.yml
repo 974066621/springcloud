@@ -3,9 +3,15 @@ server:
 spring:
   application:
     name: springcloud-config-server #微服务的名字
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri:  https://github.com/974066621/springcloud # 远程 的github地址
+#          search-paths: springcloud-config  #指的是在哪个文件夹下
   cloud:
     config:
       server:
-        git:
-          uri:  https://github.com/974066621/springcloud # 远程 的github地址
-          search-paths: springcloud-config  #指的是在哪个文件夹下
+        native:
+          search-locations: ../springcloud-config/
+   
