@@ -20,7 +20,6 @@ public class TestController {
 	
 	@Autowired
 	Student2Dao studentDao2;
-	
 	@Value("${info.app.name}")
 	private String value;
 	@GetMapping("/student/get")

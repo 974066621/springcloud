@@ -35,6 +35,8 @@ info:
   build.version: $project.version$
 --- 
 #添加数据源
+spring:
+  profiles: dev
 server:
   port: 8080
 info: 

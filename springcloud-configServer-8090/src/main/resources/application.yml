@@ -2,7 +2,7 @@ server:
   port: 8899
 spring:
   application:
-    name: springcloud-config-server #微服务的名字
+    name: springcloud-config-server #微服务的名字 
 #  cloud:
 #    config:
 #      server:
@@ -14,4 +14,6 @@ spring:
       server:
         native:
           search-locations: ../springcloud-config/
+          
+          
    
